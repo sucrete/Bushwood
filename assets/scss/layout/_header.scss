@@ -446,7 +446,7 @@
       color: $title-color;
       font-size: $fs-base;
       font-weight: 700;
-      padding: 15px 22px;
+      padding: 15px 15px;
       text-transform: uppercase;
 
       &:last-of-type {
@@ -885,6 +885,10 @@
   &.pro-shop {
     background-position: center 80%;
     background-color: rgba($black-color, $alpha: 0.15);
+  }
+  &.online-store {
+    background-color: rgba($black-color, $alpha: 0.45);
+    background-position: center 60%;
   }
 }
 

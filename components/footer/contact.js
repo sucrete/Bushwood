@@ -9,7 +9,7 @@ export class Contact extends LitElement {
     return html`
       <div class="footer__block">
         <div class="footer__block-body">
-          <h6 class="pb-2" style="color: white">Contact</h6>
+          <h3 class="pb-2" style="color: white">Contact</h3>
           <ul class="footer__info">
             <li class="footer__info-item">
               <span><i class="fa-solid fa-phone"></i></span>
@@ -17,16 +17,7 @@ export class Contact extends LitElement {
                 <span>(816) 470-2582</span></a
               >
             </li>
-            <li class="footer__info-item">
-              <span><i class="fa-solid fa-location-dot"></i></span>
-              <a
-                href="https://maps.app.goo.gl/gU6kEd5yXvKLAApL7"
-                target="_blank"
-              >
-                901 Wollard Blvd<br />
-                Richmond, MO 64085</a
-              >
-            </li>
+            
             <li class="footer__info-item">
               <span><i class="fa-solid fa-envelope"></i></span>
               <a href="mailto:info@shirkeygolfcourse.com"

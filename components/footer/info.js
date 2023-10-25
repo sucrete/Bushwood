@@ -9,35 +9,20 @@ export class Info extends LitElement {
     return html`
       <div class="footer__block footer__about">
         <div class="hours pb-4">
-          <h6 class="pb-2">Hours</h6>
+          <h3 class="pb-2">Info</h3>
           <span><i class="fa-solid fa-clock"></i></span>
           <span
             >Mon-Fri 09:00-6:00 <br /><span class="subheading"
               >(holiday hours may differ)</span
             >
           </span>
-        </div>
-
-        <div class="social__block footer__block-body">
-          <h6>Follow Us:</h6>
-          <ul class="social footer__info">
-            <li class="social__item ">
-              <a
-                href="https://www.facebook.com/shirkeygolf/"
-                class="social__link"
-                target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://www.instagram.com/shirkeygolfcourse/"
-                class="social__link"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
+          <div class="footer__info-item">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <a href="https://maps.app.goo.gl/gU6kEd5yXvKLAApL7" target="_blank">
+              901 Wollard Blvd<br />
+              Richmond, MO 64085</a
+            >
+          </div>
         </div>
       </div>
     `;

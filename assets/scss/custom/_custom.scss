@@ -268,7 +268,7 @@ section.course {
   .weather-col {
     border-radius: 21px;
     background-color: transparent;
-    border: solid 1px #dfeccd;
+    border: solid 2px #f6faf0;
     @media screen and (min-width: 992px) {
       position: relative;
       top: -20px;
@@ -402,6 +402,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  .contact__form {
+    border-radius: .75rem;
+  }
 }
 
 .swiper-slide .text {
@@ -427,7 +430,7 @@ section {
   width: 24px;
   height: 24px;
   text-align: center;
-  line-height: 23.5px;
+  line-height: 25px;
   font-size: 14px;
   font-weight: 500;
   color: #000;
@@ -454,8 +457,8 @@ section {
 //   }
 
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background: #e8a41c;
+  color: #052905;
+  background: #feff04;
 }
 
 .swiper-navigation-prev,
@@ -494,7 +497,7 @@ section {
 
     &-top {
       margin-bottom: 0px;
-      background-color: yellow;
+      background-color: #feff04;
 
       tbody {
         tr {

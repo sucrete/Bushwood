@@ -2,12 +2,14 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-  div.hours span span.subheading, .subheading{
+  div.hours span span.subheading,
+  .subheading {
     color: #ffffff70;
   }
   hr {
     margin-top: 50px;
     background-color: #ffffff48;
+    height: 2px;
   }
   .footer-bottom {
     div {
@@ -17,7 +19,7 @@
     }
   }
   @extend %of-hidden;
- 
+
   &__wrapper {
     background-color: $secondary-color;
     padding-block-start: 200px;
@@ -25,8 +27,6 @@
       padding-block-start: 207px;
     }
   }
-
-
 
   //footer block css
   &__block {
@@ -44,40 +44,57 @@
     }
   }
 
-
-
   //Footer about css
   &__about {
     .footer__brand {
-      @extend %d-inline-block,
-      %mb-20;
+      @extend %d-inline-block, %mb-20;
       max-width: 300px;
       top: 5px;
       position: relative;
       margin-left: -6px;
     }
 
-    >p {
+    > p {
       @extend %mb-30;
       color: $white-color;
     }
-
-    .social__block, .hours {
-      h6 {
+    .social__block {
+      .social__item {
+        a {
+          &:hover {
+            i,
+            svg {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .social__block,
+    .hours {
+      h6, h3 {
         color: $white-color;
       }
 
       .social__link {
         color: #feff00;
+        &:hover {
+          color: white;
+        }
       }
     }
+
     .hours {
       // @extend %flex;
-
+      .footer__info-item {
+        margin-block-start: 20px;
+        span {
+          margin-inline-end: 0px;
+        }
+      }
       span {
         @extend %me-10;
         &:first-of-type {
-          
           @include box(30px);
         }
         i,
@@ -85,20 +102,15 @@
           color: #feff00;
         }
         &:last-of-type {
-          color: white
+          color: white;
         }
       }
     }
   }
 
   &__logo {
-    @extend %d-inline-block,
-    %mb-25;
+    @extend %d-inline-block, %mb-25;
   }
-
-
-
-
 
   //footer links css
   &__links {
@@ -127,13 +139,11 @@
         @include add-prefix(transform, translateX(10px));
 
         a {
-          color: $theme-color;
+          color: #feff00;
         }
       }
     }
   }
-
-
 
   // footer infos css
   &__info {
@@ -164,13 +174,11 @@
 
       a {
         &:hover {
-          color: $theme-color;
+          color: #feff00;
         }
       }
-
     }
   }
-
 
   //weather widget
   #weatherWidget {
@@ -185,20 +193,17 @@
     gap: 10px;
 
     &-item {
-
       a {
-        @extend %of-hidden,
-        %d-block;
+        @extend %of-hidden, %d-block;
         @include box(80px);
-        border-radius: .25rem;
+        border-radius: 0.25rem;
 
         @include breakpoint(md) {
           @include box(80px);
         }
 
         img {
-          @extend %w-100,
-          %h-100;
+          @extend %w-100, %h-100;
           @include add-prefix(transition, $transition);
           object-fit: cover;
         }
@@ -211,5 +216,4 @@
       }
     }
   }
-
 }

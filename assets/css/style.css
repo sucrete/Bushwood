@@ -2412,7 +2412,7 @@ ol {
   color: #062906;
   font-size: 16px;
   font-weight: 700;
-  padding: 15px 22px;
+  padding: 15px 15px;
   text-transform: uppercase;
 }
 .menu > li > a:last-of-type {
@@ -2742,6 +2742,10 @@ ol {
   background-position: center 80%;
   background-color: rgba(0, 0, 0, 0.15);
 }
+.bg--cover.online-store {
+  background-color: rgba(0, 0, 0, 0.45);
+  background-position: center 60%;
+}
 
 .page-header-section.style-1 {
   background-position: center !important;
@@ -3019,12 +3023,14 @@ ol {
   color: #fff;
 }
 
-.footer div.hours span span.subheading, .footer .subheading {
+.footer div.hours span span.subheading,
+.footer .subheading {
   color: rgba(255, 255, 255, 0.4392156863);
 }
 .footer hr {
   margin-top: 50px;
   background-color: rgba(255, 255, 255, 0.2823529412);
+  height: 2px;
 }
 .footer .footer-bottom div p {
   color: white;
@@ -3055,11 +3061,28 @@ ol {
 .footer__about > p {
   color: #fff;
 }
-.footer__about .social__block h6, .footer__about .hours h6 {
+.footer__about .social__block .social__item a:hover i,
+.footer__about .social__block .social__item a:hover svg {
+  color: white;
+}
+.footer__about .social__block h6, .footer__about .social__block h3,
+.footer__about .hours h6,
+.footer__about .hours h3 {
   color: #fff;
 }
-.footer__about .social__block .social__link, .footer__about .hours .social__link {
+.footer__about .social__block .social__link,
+.footer__about .hours .social__link {
   color: #feff00;
+}
+.footer__about .social__block .social__link:hover,
+.footer__about .hours .social__link:hover {
+  color: white;
+}
+.footer__about .hours .footer__info-item {
+  margin-block-start: 20px;
+}
+.footer__about .hours .footer__info-item span {
+  margin-inline-end: 0px;
 }
 .footer__about .hours span:first-of-type {
   width: 30px;
@@ -3086,7 +3109,7 @@ ol {
   transform: translateX(10px);
 }
 .footer__links-item:hover a {
-  color: rgb(255, 171, 0);
+  color: #feff00;
 }
 .footer__info-item span {
   width: 30px;
@@ -3104,7 +3127,7 @@ ol {
   max-inline-size: 21ch;
 }
 .footer__info-item a:hover {
-  color: rgb(255, 171, 0);
+  color: #feff00;
 }
 .footer #weatherWidget h1.locationName {
   font-family: "Cormorant", serif !important;
@@ -6131,7 +6154,7 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
 .info-home .weather-col {
   border-radius: 21px;
   background-color: transparent;
-  border: solid 1px #dfeccd;
+  border: solid 2px #f6faf0;
 }
 @media screen and (min-width: 992px) {
   .info-home .weather-col {
@@ -6230,6 +6253,9 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
   justify-content: center;
   align-items: center;
 }
+.swiper-slide .contact__form {
+  border-radius: 0.75rem;
+}
 
 .swiper-slide .text {
   font-size: 15px;
@@ -6256,7 +6282,7 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
   width: 24px;
   height: 24px;
   text-align: center;
-  line-height: 23.5px;
+  line-height: 25px;
   font-size: 14px;
   font-weight: 500;
   color: #000;
@@ -6278,8 +6304,8 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
 }
 
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background: #e8a41c;
+  color: #052905;
+  background: #feff04;
 }
 
 .swiper-navigation-prev,
@@ -6312,7 +6338,7 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
 }
 .swiper-slide .tee-table-top {
   margin-bottom: 0px;
-  background-color: yellow;
+  background-color: #feff04;
 }
 .swiper-slide .tee-table-top tbody tr .par {
   color: rgb(15, 100, 15);
