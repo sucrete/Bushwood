@@ -887,8 +887,12 @@
     background-color: rgba($black-color, $alpha: 0.15);
   }
   &.online-store {
-    background-color: rgba($black-color, $alpha: 0.45);
+    background-color: rgba($black-color, $alpha: 0.55);
     background-position: center 60%;
+  }
+  &.events {
+    background-color: rgba($black-color, $alpha: 0.35);
+    background-position: center 10%;
   }
 }
 

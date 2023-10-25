@@ -2743,8 +2743,12 @@ ol {
   background-color: rgba(0, 0, 0, 0.15);
 }
 .bg--cover.online-store {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.55);
   background-position: center 60%;
+}
+.bg--cover.events {
+  background-color: rgba(0, 0, 0, 0.35);
+  background-position: center 10%;
 }
 
 .page-header-section.style-1 {
