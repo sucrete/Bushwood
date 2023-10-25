@@ -12,7 +12,6 @@ section .hero--home2 .hero__content h1 {
   line-height: 100%;
 }
 
-
 //the top header on mobile
 .header-top-area {
   .left {
@@ -100,7 +99,7 @@ section .hero--home2 .hero__content h1 {
   p {
     font-size: 20px;
     font-family: "Apfel Regular";
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: #4d5f4d;
   }
 }
@@ -112,6 +111,14 @@ section {
       // line-height: .95;
       padding-left: 0.25rem;
       text-align: center;
+    }
+    p {
+      letter-spacing: 0.5px;
+      font-size: 14px;
+      color: rgb(5, 28, 5);
+      .highlight {
+        background-color: #feff04;
+      }
     }
 
     .tee-table {
@@ -215,15 +222,92 @@ section {
   }
 }
 //table on Rates page
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f0f2ede7 !important; // Choose your own color here
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg:transparent;
+}
+.table-striped > tbody > tr:nth-child(odd) > td {
+  background-color: #f0f2ede7;
+}
+
 .rates__wrapper {
   table {
-    th {
-      &:nth-of-type(2) {
-        width: 20%;
+    thead {
+      tr {
+        th {
+          letter-spacing: .5px;
+        }
       }
+    }
+    tbody {
+      border-top: 2px solid rgb(20, 53, 4) !important;
+      tr {
+        td {
+          padding-right: 17px;
+          letter-spacing: 0.5px;
+          padding-top: 14px;
+          padding-bottom: 14px;
+          padding-left: 17px;
+        }
+      }
+    }
+    &.new-table {
+      tbody {
+        border-top: 2px solid rgb(20, 53, 4) !important;
+        tr {
+          td {
+            padding-right: 17px;
+            letter-spacing: 0.5px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 120%;
+            &.dot {
+              width: 2%;
+              padding-right: 0px;
+              padding-left: 17px;
+              padding-right: 5px;
+              span {
+                display: inline-block;
+                height: 12px;
+                width: 12px;
+                border-radius: 99px;
+                margin-bottom: -1px;
+              }
+              &-black {
+                span {
+                  background-color: #680000;
+                }
+              }
+            }
 
-      &:nth-of-type(3) {
-        width: 15%;
+            &:nth-of-type(2) {
+              padding-left: 9px;
+            }
+
+            &:last-of-type {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    &.particulars {
+      tbody {
+        border-top: 0px solid rgb(20, 53, 4) !important;
+
+        tr {
+          td {
+            padding-right: 17px;
+            letter-spacing: 0.5px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 120%;
+            padding-left: 20px;
+            background-color: #f0f2ede7;
+          }
+        }
       }
     }
   }
@@ -284,6 +368,10 @@ section.course {
 //Contact Page
 section {
   &.contact {
+    p {
+      color: #556655;
+      letter-spacing: .5px;
+    }
     @media screen and (max-width: 767px) {
       padding-block-end: 20px;
     }
@@ -403,7 +491,7 @@ section {
   justify-content: center;
   align-items: center;
   .contact__form {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
   }
 }
 
@@ -579,6 +667,14 @@ section {
   }
 }
 
+.section-rates {
+  table {
+    th {
+      font-family: "Apfel Mittel";
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .swiper-slide .contact__form {
     padding-top: 2rem;
@@ -616,8 +712,6 @@ section {
 //Lightbox styling
 
 .lightbox-wrapper {
-  
-
   /** LIGHTBOX MARKUP **/
 
   .lightbox {
@@ -660,7 +754,6 @@ section {
 //on The 19th Hole page, the wrapper for restaurant info
 .room__wrapper {
   h3 {
-    margin-block-end: 10px; 
+    margin-block-end: 10px;
   }
-
 }

@@ -23,7 +23,7 @@
       @extend %d-grid,
       %place-i-center;
       @include box(50px);
-      background-color: $theme-color;
+      background-color: #feff04;
       border-radius: 50%;
       color: $title-color;
     }

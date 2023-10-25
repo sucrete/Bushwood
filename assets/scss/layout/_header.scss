@@ -36,6 +36,7 @@
                   max-height: 55px;
                   margin-top: 0px;
                   margin-bottom: -10px;
+                  margin-left: -5px;  
                 }
               }
             }
@@ -866,8 +867,8 @@
   background-size: cover;
 
   &.rates {
-    background-position: center 60%;
-    background-color: rgba($black-color, $alpha: 0.3);
+    background-position: center 65%;
+    background-color: rgba($black-color, $alpha: 0.2);
   }
 
   &.course {
@@ -893,6 +894,10 @@
   &.events {
     background-color: rgba($black-color, $alpha: 0.35);
     background-position: center 10%;
+  }
+  &.membership {
+    background-color: rgba($black-color, $alpha: 0.5);
+    background-position: center 50%;
   }
 }
 

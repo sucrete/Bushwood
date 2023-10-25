@@ -2113,6 +2113,7 @@ ol {
   max-height: 55px;
   margin-top: 0px;
   margin-bottom: -10px;
+  margin-left: -5px;
 }
 .header-section.header-1 {
   background: #104411;
@@ -2725,8 +2726,8 @@ ol {
   background-size: cover;
 }
 .bg--cover.rates {
-  background-position: center 60%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center 65%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .bg--cover.course {
   background-position: center 68%;
@@ -2749,6 +2750,10 @@ ol {
 .bg--cover.events {
   background-color: rgba(0, 0, 0, 0.35);
   background-position: center 10%;
+}
+.bg--cover.membership {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center 50%;
 }
 
 .page-header-section.style-1 {
@@ -2982,7 +2987,7 @@ ol {
 .contact__info-icon {
   width: 50px;
   height: 50px;
-  background-color: rgb(255, 171, 0);
+  background-color: #feff04;
   border-radius: 50%;
   color: #062906;
 }
@@ -6045,13 +6050,21 @@ section .hero--home2 .hero__content h1 {
 .blog__wrapper p {
   font-size: 20px;
   font-family: "Apfel Regular";
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #4d5f4d;
 }
 
 section.section-rates h2 {
   padding-left: 0.25rem;
   text-align: center;
+}
+section.section-rates p {
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: rgb(5, 28, 5);
+}
+section.section-rates p .highlight {
+  background-color: #feff04;
 }
 section.section-rates .tee-table {
   font-size: 11px;
@@ -6128,11 +6141,74 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
   text-align: left;
 }
 
-.rates__wrapper table th:nth-of-type(2) {
-  width: 20%;
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: rgba(240, 242, 237, 0.9058823529) !important;
 }
-.rates__wrapper table th:nth-of-type(3) {
-  width: 15%;
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg:transparent;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td {
+  background-color: rgba(240, 242, 237, 0.9058823529);
+}
+
+.rates__wrapper table thead tr th {
+  letter-spacing: 0.5px;
+}
+.rates__wrapper table tbody {
+  border-top: 2px solid rgb(20, 53, 4) !important;
+}
+.rates__wrapper table tbody tr td {
+  padding-right: 17px;
+  letter-spacing: 0.5px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 17px;
+}
+.rates__wrapper table.new-table tbody {
+  border-top: 2px solid rgb(20, 53, 4) !important;
+}
+.rates__wrapper table.new-table tbody tr td {
+  padding-right: 17px;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 120%;
+}
+.rates__wrapper table.new-table tbody tr td.dot {
+  width: 2%;
+  padding-right: 0px;
+  padding-left: 17px;
+  padding-right: 5px;
+}
+.rates__wrapper table.new-table tbody tr td.dot span {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 99px;
+  margin-bottom: -1px;
+}
+.rates__wrapper table.new-table tbody tr td.dot-black span {
+  background-color: #680000;
+}
+.rates__wrapper table.new-table tbody tr td:nth-of-type(2) {
+  padding-left: 9px;
+}
+.rates__wrapper table.new-table tbody tr td:last-of-type {
+  text-align: right;
+}
+.rates__wrapper table.particulars tbody {
+  border-top: 0px solid rgb(20, 53, 4) !important;
+}
+.rates__wrapper table.particulars tbody tr td {
+  padding-right: 17px;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 120%;
+  padding-left: 20px;
+  background-color: rgba(240, 242, 237, 0.9058823529);
 }
 .rates__wrapper .season-passes table th:nth-of-type(1) {
   width: 92%;
@@ -6173,6 +6249,10 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
   }
 }
 
+section.contact p {
+  color: #556655;
+  letter-spacing: 0.5px;
+}
 @media screen and (max-width: 767px) {
   section.contact {
     padding-block-end: 20px;
@@ -6392,6 +6472,10 @@ section.section-rates .tee-table-bottom.particulars tbody tr td:last-of-type {
 }
 .swiper-slide .tee-table-bottom tbody tr td:last-of-type {
   text-align: right;
+}
+
+.section-rates table th {
+  font-family: "Apfel Mittel";
 }
 
 @media (max-width: 1000px) {
