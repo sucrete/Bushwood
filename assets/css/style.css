@@ -2105,6 +2105,9 @@ ol {
     top: -53px;
   }
 }
+.header-section.header-fixed .header-holder .header-menu-part .header-top.open .container {
+  padding-right: 0.5rem;
+}
 .header-section.header-fixed .header-holder .header-menu-part .container .header-bottom .brand-logo .logo .shield {
   display: none;
 }
@@ -2182,6 +2185,9 @@ ol {
 }
 .header-top:first-of-type {
   border-bottom-width: 0px;
+}
+.header-top.open .container {
+  padding-right: 0.5rem;
 }
 .header-top .left li a:not(.booking-btn) {
   color: white;
@@ -3041,7 +3047,7 @@ ol {
   background-color: rgba(255, 255, 255, 0.2823529412);
   height: 2px;
 }
-.footer .footer-bottom div p {
+.footer .footer-bottom p, .footer .footer-bottom a {
   color: white;
 }
 .footer__wrapper {
@@ -3074,7 +3080,8 @@ ol {
 .footer__about .social__block .social__item a:hover svg {
   color: white;
 }
-.footer__about .social__block h6, .footer__about .social__block h3,
+.footer__about .social__block h6,
+.footer__about .social__block h3,
 .footer__about .hours h6,
 .footer__about .hours h3 {
   color: #fff;
@@ -6029,8 +6036,10 @@ section .hero--home2 .hero__content h1 {
 }
 @media only screen and (max-width: 768px) {
   .header-top-area .booking-btn {
-    background-color: rgb(255, 171, 0);
+    background-color: #feff04;
+    font-family: "Apfel Mittel";
     border-radius: 0.25rem;
+    line-height: 155%;
     color: #15341c !important;
     display: inline-block;
     font-weight: 600;
@@ -6257,6 +6266,10 @@ section.contact p {
   section.contact {
     padding-block-end: 20px;
   }
+}
+section.contact .map .container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .kirk-card {

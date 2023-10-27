@@ -12,10 +12,8 @@
     height: 2px;
   }
   .footer-bottom {
-    div {
-      p {
-        color: white;
-      }
+    p, a {
+      color: white;
     }
   }
   @extend %of-hidden;
@@ -72,7 +70,8 @@
     }
     .social__block,
     .hours {
-      h6, h3 {
+      h6,
+      h3 {
         color: $white-color;
       }
 

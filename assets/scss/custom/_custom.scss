@@ -71,8 +71,10 @@ section .hero--home2 .hero__content h1 {
     display: none;
 
     @media only screen and (max-width: 768px) {
-      background-color: $theme-color;
+      background-color: #feff04;
+      font-family: "Apfel Mittel";
       border-radius: 0.25rem;
+      line-height: 155%;
       color: #15341c !important;
       display: inline-block;
       font-weight: 600;
@@ -374,6 +376,12 @@ section {
     }
     @media screen and (max-width: 767px) {
       padding-block-end: 20px;
+    }
+    .map {
+      .container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
   }
 }

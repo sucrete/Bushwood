@@ -24,17 +24,24 @@
 
     <!-- reusable Lit components -->
     <script type="module" src="./components/footer/about.js"></script>
-    <script type="module" src="./components/footer/links.js"></script>
+    <script type="module" src="./components/footer/info.js"></script>
     <script type="module" src="./components/footer/contact.js"></script>
     <script type="module" src="./components/footer/footer-bottom.js"></script>
   </head>
 
   <body>
+
+
+
+
     <!-- ===============>> Preloader start here <<================= -->
     <div class="preloader">
       <div class="loader"></div>
     </div>
     <!-- ===============>> Preloader end here <<================= -->
+
+
+
 
     <!-- ========== Header Section Starts Here========== -->
     <header class="header-section header-2">
@@ -45,17 +52,15 @@
               <div class="header-top-area">
                 <ul class="left">
                   <li>
-                    <a href="tel:8164702582" target="_blank"
+                    <a href="#"
                       ><i class="fa-solid fa-phone"></i>
                       <span>(816) 470-2582</span></a
                     >
                   </li>
                   <li>
-                    <a
-                      href="https://maps.app.goo.gl/gU6kEd5yXvKLAApL7"
-                      target="_blank"
-                      ><i class="fa-solid fa-location-dot"></i> 901 Wollard
-                      Blvd, Richmond, MO 64085</a
+                    <a href="#"
+                      ><i class="fa-solid fa-location-dot"></i> 3201 West
+                      Rolling Hills Circle, Davie, Florida 33328</a
                     >
                   </li>
                   <li>
@@ -74,33 +79,57 @@
               <div class="brand-logo d-none d-lg-inline-block">
                 <div class="logo">
                   <a href="home.html">
-                    <img src="assets/images/logo/shirkey-normed.png" alt="logo" />
+                    <img
+                      src="assets/images/logo/bushwood-large-type2.svg"
+                      alt="logo"
+                      class="img-fluid shield"
+                    />
+                    <img
+                      src="assets/images/logo/bushwood-simple.svg"
+                      alt="logo"
+                      class="img-fluid simple"
+                    />
                   </a>
                 </div>
               </div>
               <div class="header-wrapper justify-content-lg-end">
                 <div class="mobile-logo d-lg-none">
                   <a href="home.html"
-                    ><img src="assets/images/logo/shirkey-normed.png" alt="logo"
+                    ><img
+                      src="assets/images/logo/bushwood-simple.svg"
+                      alt="logo"
                   /></a>
                 </div>
                 <div class="menu-area">
                   <ul class="menu">
                     <li>
                       <a href="the-course.html" style="padding-right: 0px"
-                        >The Course</a
+                        >Course</a
                       >
                     </li>
                     <li>
-                      <a href="19th-hole.html" style="padding-right: 0px"
-                        >The 19th Hole</a
+                      <a href="online-store.html" style="padding-right: 0px"
+                        >Online Store</a
                       >
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="events.html" style="padding-right: 0px"
+                        >Events</a
+                      >
                     </li>
                     <li>
                       <a href="rates.html" style="padding-right: 0px">Rates</a>
+                    </li>
+                    <li>
+                      <a href="membership.html" style="padding-right: 0px"
+                        >Membership</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="contact.html" style="padding-right: 0px"
+                        >Contact</a
+                      >
                     </li>
                   </ul>
                   <a href="book-tee-time.html" class="booking-btn"
@@ -121,6 +150,9 @@
       </div>
     </header>
     <!-- ========== Header Section Ends Here========== -->
+
+
+
 
     <!-- ================> Page header start here <================== -->
     <section
@@ -145,27 +177,21 @@
     </section>
     <!-- ================> Page header end here <================== -->
 
+
+
+
     <!-- ========== booking Section start Here========== -->
-    <section class="booking pt-5 pb-5">
-      <div class="container">
-        <iframe
-          src="https://teetimes.teequest.com/110"
-          style="
-            width: 100%;
-            height: 100%;
-            min-height: 1000px;
-            margin-top: 0px;
-            border: none;
-          "
-          scrolling="no"
-          frameborder="0"
-        ></iframe>
-      </div>
+    <section class="booking pt-5 mt-5 pb-5 container">
+      <div class="spacer" style="height: 80px; background-color: #f1dd83; border-top-left-radius: 21px; border-top-right-radius: 21px;"></div>
+      <iframe src="https://demo.teetimes.teequest.com/901" style="width: 100%; min-height: 1000px; margin-top: -20px; border: none;" frameborder="0"></iframe>
     </section>
     <!-- ========== booking Section Ends Here========== -->
 
+
+
+
     <!-- ========== Footer Section start Here========== -->
-    <footer class="footer">
+      <footer class="footer">
       <!-- Footer Newsletter -->
       <div class="newsletter newsletter--lowerd">
         <div class="container">
@@ -198,47 +224,26 @@
 
       <!-- Main footer part -->
       <div class="footer__wrapper padding-top padding-top padding-bottom pb-0">
-        <div class="container gx-4 gx-sm-0">
-          <div class="row g-5 pb-5">
+        <div class="container gx-3">
+          <div class="row g-5 pb-3">
             <!-- about -->
-            <footer-about class="col-lg-3 col-sm-6"></footer-about>
+            <footer-about class="col-lg-6 col-sm-6"></footer-about>
+
+            <!-- info -->
+            <footer-info class="col-lg-3 col-sm-6"></footer-info>
 
             <!-- contact -->
-            <footer-contact class="col-lg-3 col-sm-6"></footer-contact>
-
-            <!-- links -->
-            <footer-links class="col-lg-3 col-sm-6"></footer-links>
-
-            <!-- Weather -->
-            <div class="col-lg-3 col-sm-6 weather">
-              <a
-                class="weatherwidget-io"
-                href="https://forecast7.com/en/39d28n93d98/richmond/?unit=us"
-                data-days="3"
-                data-textcolor="#ffffff"
-                data-raincolor="#5085e4"
-                >Richmond, MO, USA</a
-              >
-              <script>
-                !(function (d, s, id) {
-                  var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                  if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://weatherwidget.io/js/widget.min.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                  }
-                })(document, "script", "weatherwidget-io-js");
-              </script>
-            </div>
+            <footer-contact class="col-lg-3 col-sm-6 pl-sm-0"></footer-contact>
           </div>
-          <hr class="opacity-100" />
+          <hr />
           <footer-bottom class="row footer-bottom"> </footer-bottom>
         </div>
       </div>
     </footer>
     <!-- ========== Footer Section ends Here========== -->
+
+
+
 
     <!-- scrollToTop start here -->
     <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-up"></i></a>

@@ -24,6 +24,15 @@
     .header-holder {
       @extend %p-rel;
       .header-menu-part {
+        .header-top {
+          &.open {
+            .container {
+              padding-right: 0.5rem;
+            }
+          }
+
+          
+        }
         .container {
           .header-bottom {
             .brand-logo {
@@ -36,7 +45,7 @@
                   max-height: 55px;
                   margin-top: 0px;
                   margin-bottom: -10px;
-                  margin-left: -5px;  
+                  margin-left: -5px;
                 }
               }
             }
@@ -139,6 +148,12 @@
 
   &:first-of-type {
     border-bottom-width: 0px;
+  }
+
+  &.open {
+    .container {
+      padding-right: 0.5rem;
+    }
   }
 
   .left {
