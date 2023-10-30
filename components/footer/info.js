@@ -18,9 +18,9 @@ export class Info extends LitElement {
           </span>
           <div class="footer__info-item">
             <span><i class="fa-solid fa-location-dot"></i></span>
-            <a href="https://maps.app.goo.gl/gU6kEd5yXvKLAApL7" target="_blank">
-              901 Wollard Blvd<br />
-              Richmond, MO 64085</a
+            <a href="#!">
+              3201 West Rolling Hills Circle<br />
+              Davie, Florida 33328</a
             >
           </div>
         </div>
